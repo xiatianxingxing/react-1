@@ -78,3 +78,6 @@ create-react-app 名称
 npm run build   打包
 npm install -g serve  下载serve
 serve build    运行build下的index
+
+### 引入路由
+cnpm install react-router-dom --save-dev
