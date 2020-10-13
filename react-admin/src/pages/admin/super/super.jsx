@@ -2,10 +2,10 @@ import  React,{ Component } from 'react';
 
  
 
-export default class Admin extends Component {
+export default class Super extends Component {
     render (){
         return (
-            <div class="viewComponent">
+            <div className="viewComponent">
                 <h3 className="f20">1.constructor( )-----super( )的基本含义</h3>
                 <p className='f18'>constructor( )——构造方法</p>
                 <p className='f16'>这是ES6对类的默认方法，通过 new 命令生成对象实例时自动调用该方法。并且，该方法是类中必须有的，如果没有显示定义，则会默认添加空的constructor( )方法</p>
@@ -33,6 +33,7 @@ export default class Admin extends Component {
                 <p className='f16'>（无论有没有constructor，在render中this.props都是可以使用的，这是React自动附带的；）</p>
                 <p className='f16'>如果没用到constructor,是可以不写的；React会默认添加一个空的constructor。</p>
                 
+               
             </div>
 
         )
