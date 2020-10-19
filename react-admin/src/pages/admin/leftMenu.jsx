@@ -20,6 +20,7 @@ class LeftMeun extends Component {
                 {id:2,icon:'CloudOutlined',name:'通过路由传参', key: '/admin/params'},
                 {id:3,icon:'CloudOutlined',name:'生命周期', key: '/admin/smzq'},
                 {id:4,icon:'CloudOutlined',name:'父子组件传值', key: '/admin/spread'},
+                {id:5,icon:'CloudOutlined',name:'导航切换', key: '/admin/nav'}
             ]
         }
     }

@@ -13,6 +13,7 @@ import Params from './params/params';
 import Smzq from './smzq/smzq';
 import Super from './super/super'
 import Spread from './spread/spread'
+import Nav from './nav/nav'
 
 // 布局组件
 const { Header, Sider, Content } = Layout
@@ -68,6 +69,7 @@ class Admin extends Component {
                                 <Route path="/admin/smzq"  component={ Smzq }></Route>
                                 <Route path="/admin/params" component={ Params }></Route>
                                 <Route path="/admin/spread" component={ Spread }></Route>
+                                <Route path="/admin/nav" component={ Nav }></Route>
                             </Switch>
                         </Content>
                     </Layout>

@@ -14,6 +14,7 @@ function App() {
         <Route path='/home' component={Home}></Route>
         <Route path='/admin' component={Admin}></Route>
         <Route path='/' component={Home}></Route>
+      
       </Switch>
     </HashRouter>
   );
