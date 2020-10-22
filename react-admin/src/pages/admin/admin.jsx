@@ -9,11 +9,7 @@ import { Layout } from 'antd';
 import LeftMenu from './leftMenu'
 import { withRouter } from 'react-router-dom'
 // 获取组件
-import Params from './params/params';
-import Smzq from './smzq/smzq';
-import Super from './super/super'
-import Spread from './spread/spread'
-import Nav from './nav/nav'
+import routers from './route'
 
 // 布局组件
 const { Header, Sider, Content } = Layout
@@ -65,11 +61,13 @@ class Admin extends Component {
                         </Sider>
                         <Content>
                             <Switch>
-                                <Route path="/admin/super" component={ Super }></Route>
-                                <Route path="/admin/smzq"  component={ Smzq }></Route>
-                                <Route path="/admin/params" component={ Params }></Route>
-                                <Route path="/admin/spread" component={ Spread }></Route>
-                                <Route path="/admin/nav" component={ Nav }></Route>
+                                <Route path="/admin/super" component={ routers.Super }></Route>
+                                <Route path="/admin/smzq"  component={ routers.Smzq }></Route>
+                                <Route path="/admin/params" component={ routers.Params }></Route>
+                                <Route path="/admin/spread" component={ routers.Spread }></Route>
+                                <Route path="/admin/nav" component={ routers.Nav }></Route>
+                                <Route path="/admin/form" component={ routers.Form }></Route>
+                                <Route path="/admin/demo1" component={ routers.Demo1 }></Route>
                             </Switch>
                         </Content>
                     </Layout>

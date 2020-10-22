@@ -1,0 +1,22 @@
+
+.liBox{
+    width: 100px;
+    height: 100px;
+    margin: 80px;
+}
+
+:global(.redBox){
+    background: red;
+}
+:global(.yellowBox){
+    background: yellow;
+}
+:global(.blueBox){
+    background: blue;
+}
+:global(.pinkBox){
+    background: pink;
+}
+:global(.greenBox){
+    background: green;
+}
