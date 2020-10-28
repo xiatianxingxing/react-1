@@ -16,26 +16,22 @@ const { Header, Sider, Content } = Layout
 
 
 class Admin extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {date: new Date()};
     }
     // 方法会在组件已经被渲染到 DOM 中后运行
     componentDidMount() {
-        this.timerID = setInterval(
-            () => this.tick(),
-            1000
-        );
+        
+        console.log('ddd',this.props.location.pathname)
     }
 
     componentWillUnmount() {
-        clearInterval(this.timerID);
+       
     }
 
     tick() {
-        this.setState({
-            date: new Date()
-        });
+       
     }
     componentWillReceiveProps(nextProps) {
         
@@ -51,7 +47,7 @@ class Admin extends Component {
                     <Header>
                         <h3 className={styles.title}>
                             react学习与总结
-                        <span className="fr">{this.state.date.toLocaleTimeString()}</span>
+                     
                         </h3>
                         
                     </Header>
@@ -68,6 +64,7 @@ class Admin extends Component {
                                 <Route path="/admin/nav" component={ routers.Nav }></Route>
                                 <Route path="/admin/form" component={ routers.Form }></Route>
                                 <Route path="/admin/demo1" component={ routers.Demo1 }></Route>
+                                <Route path="/admin/demo2" component={ routers.Demo2 }></Route>
                             </Switch>
                         </Content>
                     </Layout>

@@ -23,6 +23,7 @@ class LeftMeun extends Component {
                 {id:5,icon:'CloudOutlined',name:'导航切换', key: '/admin/nav'},
                 {id:5,icon:'CloudOutlined',name:'表单验证', key: '/admin/form'},
                 {id:5,icon:'CloudOutlined',name:'小demo', key: '/admin/demo1'},
+                {id:5,icon:'CloudOutlined',name:'兄弟组件通讯', key: '/admin/demo2'},
                 
             ]
         }
