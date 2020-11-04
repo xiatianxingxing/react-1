@@ -81,3 +81,8 @@ serve build    运行build下的index
 
 ### 引入路由
 cnpm install react-router-dom --save-dev
+
+### redux 
+npm install --save redux
+npm install --save react-redux (redux)
+npm install --save redux-thunk (中间件)

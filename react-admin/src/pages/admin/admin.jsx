@@ -65,6 +65,7 @@ class Admin extends Component {
                                 <Route path="/admin/form" component={ routers.Form }></Route>
                                 <Route path="/admin/demo1" component={ routers.Demo1 }></Route>
                                 <Route path="/admin/demo2" component={ routers.Demo2 }></Route>
+                                <Route path="/admin/redux1" component={ routers.Redux1 }></Route>
                             </Switch>
                         </Content>
                     </Layout>
