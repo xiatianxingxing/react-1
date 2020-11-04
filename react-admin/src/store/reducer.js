@@ -5,21 +5,41 @@
  */
 
 import * as actionType from './action-type';
-
 import { combineReducers } from 'redux';
 
 const defineObj = {
-
+    
+    demo3List:[
+        '我是一只牛，我是一只牛',
+        '今天学习redux的第2天',
+        '哎！ 难搞哦~'
+    ],
+    demo3Value:'我是一只牛'
 }
-function addName(state=defineObj, action){
-    switch(action.type){
-        case actionType.ADDNAME:
-            return action.data
+function demo3(state=defineObj, action){
+    // reducer只能接受state  不能改变
+    switch(action.type) {
+        case  actionType.CHANGE_INPUT:
+           return {
+               ...state,
+               demo3Value: action.value
+           }
+        case  actionType.ADD_LIST:
+            return {
+                ...state,
+                demo3List: [...state.demo3List,action.value],
+                demo3Value:''
+            }
+        case  actionType.DELETE_LIST:
+            const newState = JSON.parse(JSON.stringify(state))
+            newState.demo3List.splice(action.index,1)
+            return newState
         default:
             return state
-    }
+   } 
+
 }
 
 export const finalReducer = combineReducers({
-    addName
+    demo3
 })

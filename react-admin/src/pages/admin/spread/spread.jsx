@@ -1,6 +1,6 @@
 import  React,{ Component } from 'react';
 
-import { Input,Button } from 'antd';
+import { Input } from 'antd';
 import Son from './sprSon'
 
 export default class Spread extends Component {

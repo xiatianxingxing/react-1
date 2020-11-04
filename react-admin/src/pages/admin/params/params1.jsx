@@ -4,12 +4,6 @@ import  React,{ Component } from 'react';
 
 export default class Params1 extends Component {
 
-    constructor(){
-        super()
-        console.log(this.props)
-    }
-
-
     componentDidMount(){
         console.log(this.props.match.params)
        

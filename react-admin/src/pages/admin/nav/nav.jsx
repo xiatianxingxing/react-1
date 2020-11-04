@@ -68,7 +68,7 @@ export default class Nav extends Component {
                    {
                         this.state.nav.map((item,index)=>{
                            
-                            if(index == 0){
+                            if(index === 0){
                                 
                                 return <li className="navLi active" data-id={item.id} onClick={ this.getNavClick } key={item.id}>{item.navName}</li>
                             }else{

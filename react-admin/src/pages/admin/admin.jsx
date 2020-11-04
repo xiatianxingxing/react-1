@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
 import styles from './admin.module.css'
 // 引入路由
-import {Route, Switch , Link} from 'react-router-dom'
+import {Route, Switch } from 'react-router-dom'
 
 import { Layout } from 'antd';
 
@@ -66,6 +66,7 @@ class Admin extends Component {
                                 <Route path="/admin/demo1" component={ routers.Demo1 }></Route>
                                 <Route path="/admin/demo2" component={ routers.Demo2 }></Route>
                                 <Route path="/admin/redux1" component={ routers.Redux1 }></Route>
+                                <Route path="/admin/demo3" component={ routers.Demo3 }></Route>
                             </Switch>
                         </Content>
                     </Layout>

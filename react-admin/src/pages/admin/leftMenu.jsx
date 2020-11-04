@@ -7,8 +7,6 @@ import { Menu } from 'antd';
 // import { CloudOutlined } from '@ant-design/icons';
 
 
-// menu组件
-const { SubMenu } = Menu;
 
 class LeftMeun extends Component {
     constructor(props){
@@ -21,11 +19,11 @@ class LeftMeun extends Component {
                 {id:3,icon:'CloudOutlined',name:'生命周期', key: '/admin/smzq'},
                 {id:4,icon:'CloudOutlined',name:'父子组件传值', key: '/admin/spread'},
                 {id:5,icon:'CloudOutlined',name:'导航切换', key: '/admin/nav'},
-                {id:5,icon:'CloudOutlined',name:'表单验证', key: '/admin/form'},
-                {id:5,icon:'CloudOutlined',name:'小demo', key: '/admin/demo1'},
-                {id:5,icon:'CloudOutlined',name:'兄弟组件通讯', key: '/admin/demo2'},
-                {id:5,icon:'CloudOutlined',name:'认识Redux', key: '/admin/redux1'},
-                
+                {id:6,icon:'CloudOutlined',name:'表单验证', key: '/admin/form'},
+                {id:7,icon:'CloudOutlined',name:'小demo', key: '/admin/demo1'},
+                {id:8,icon:'CloudOutlined',name:'兄弟组件通讯', key: '/admin/demo2'},
+                {id:9,icon:'CloudOutlined',name:'认识Redux', key: '/admin/redux1'},
+                {id:10,icon:'CloudOutlined',name:'redux小demo',key: '/admin/demo3'}
             ]
         }
     }

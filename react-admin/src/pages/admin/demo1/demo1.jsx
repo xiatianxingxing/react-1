@@ -42,7 +42,7 @@ export default class Demo1 extends Component {
     // 输出色块
     colorBox = (e) =>{
         console.log(1)
-        return this.state.nav.map(item=>{
+        return this.state.nav.map( item => {
             if(item.id === this.state.activeId){
                
                 var  str = styles.liBox + ' ' + item.color

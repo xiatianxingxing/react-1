@@ -12,10 +12,7 @@ let viewH = {
     overflow: 'auto'
 }
 export default class Params extends Component {
-    constructor(){
-        super()
-    }
-
+    
     openParams = () =>{
         this.props.history.push('/admin/params/params1/lululu')
     }
