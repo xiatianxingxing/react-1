@@ -34,6 +34,13 @@ function demo3(state=defineObj, action){
             const newState = JSON.parse(JSON.stringify(state))
             newState.demo3List.splice(action.index,1)
             return newState
+        case  actionType.GET_LIST:
+            return {
+                ...state,
+                demo3List: action.data
+            }
+           
+        
         default:
             return state
    } 

@@ -81,7 +81,7 @@ export default class Params1 extends Component {
     getGrade = (name) =>{
         console.log(name)
         data.map(val=>{
-            if(val.name === name || val.id == name){
+            if(val.name === name || val.id === name){
                 this.setState({
                     selectObj: val.grade
                 })

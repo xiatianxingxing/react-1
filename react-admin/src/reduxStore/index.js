@@ -1,5 +1,6 @@
-// 数据集
-
+// 数据集  这个是redux 不是 react-redux
+// 使用thunk 必须使用中间件 applyMiddleware
+// compose 增强函数
 import { createStore, applyMiddleware } from 'redux';
 import { finalReducer } from './reducer'
 import thunk from 'redux-thunk';

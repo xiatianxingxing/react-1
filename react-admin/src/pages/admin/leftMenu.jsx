@@ -23,7 +23,8 @@ class LeftMeun extends Component {
                 {id:7,icon:'CloudOutlined',name:'小demo', key: '/admin/demo1'},
                 {id:8,icon:'CloudOutlined',name:'兄弟组件通讯', key: '/admin/demo2'},
                 {id:9,icon:'CloudOutlined',name:'认识Redux', key: '/admin/redux1'},
-                {id:10,icon:'CloudOutlined',name:'redux小demo',key: '/admin/demo3'}
+                {id:10,icon:'CloudOutlined',name:'redux小demo',key: '/admin/demo3'},
+                {id:10,icon:'CloudOutlined',name:'学习react-redux',key: '/admin/reactRedux'}
             ]
         }
     }

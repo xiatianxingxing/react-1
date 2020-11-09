@@ -2,18 +2,19 @@
 
 import * as actionType from './action-type';
 
-// demo3输入框改变
-export const demo3ChangeInput = (value) => ({
+// 输入框改变
+export const ActionChangeInput = (value) => ({
     type: actionType.CHANGE_INPUT,
     value
 })
-// demo3新增list
-export const demo3AddList = (value) => ({
+// active新增list
+export const activeAddList = () => ({
     type: actionType.ADD_LIST,
-    value
 })
-// demo3删除list
-export const demo3DeleteList = (index) => ({
+// active删除list
+export const activeDeleteList = (index) => ({
     type: actionType.DELETE_LIST,
     index
 })
+
+

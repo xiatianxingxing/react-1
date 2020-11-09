@@ -1,9 +1,9 @@
 import  React,{ Component } from 'react';
 
 import { Input,Button,List,Divider,Row,Col } from 'antd';
-import { demo3ChangeInput, demo3AddList,demo3DeleteList } from '../../../store/action'
+import { demo3ChangeInput, demo3AddList,demo3DeleteList,getListThunk } from '../../../reduxStore/action'
 
-import store from '../../../store/index'
+import store from '../../../reduxStore/index'
 
 
 
@@ -16,6 +16,29 @@ class Demo3 extends Component {
         // 订阅（其实这个订阅在高版本已经可以省略了）
         store.subscribe(this.storeChange)
     }
+    // 模拟异步
+    componentDidMount(){
+        // const pr = new Promise((resolve,rejact)=>{
+        //     const data = [
+        //         '有是美好的一天，真好！',
+        //         '冬天到了，冷~~~',
+        //         '他喵的！我买额围巾咋还不到'
+        //     ]
+        //     resolve(data)
+        // })
+        
+        // pr.then(res=>{
+        //     console.log(res)
+        //     store.dispatch(getList(res))
+        // },(err)=>{
+        //     console.log(err)
+        // })
+        // 上面的问题简写成下面的 也就是异步写到了action里 便于维护
+       
+        store.dispatch(getListThunk())
+        
+    }
+
     // 输入框改变
     changeInput = (_e) =>{
        
@@ -24,7 +47,7 @@ class Demo3 extends Component {
 
     // store订阅回调
     storeChange = () =>{
-        console.log(store.getState())
+      
         this.setState(store.getState().demo3)
      
     }

@@ -4,15 +4,22 @@ import 'antd/dist/antd.css';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// 提供器 
 import { Provider } from 'react-redux'
+// react-redux store
+import store from './reactReduxStore'
 
-import store from './store/index'
 ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('root')
 );
+// 如果只用redux就不需要引用 提供器 provider
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById('root')
+// );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

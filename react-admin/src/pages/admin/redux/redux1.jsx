@@ -24,10 +24,19 @@ class Redux1 extends Component {
                     如图所示：reactComponents(我们的组件层) 引入store仓库的状态使用，同时想改变store需要调用action的方法
                     despatch（），但是action只是告诉store我准备改变那个值，但是store告诉action改变这个值的方法在reducer里，
                     然后我们就去reducer里，reducer0 会接收到action的信息，将会进行状态（数据）的处理，返回一个新的
-                    newState，这时候store才会改变
+                    newState给store，这时候store才会改变
 
                 </p>
-                
+                <p className='18'>redux坑</p>
+                <p className='16'>
+                    store必须是唯一的，只能有一个store空间
+                </p>
+                <p className='16'>
+                    只有store能改变自己的内容，reducer不能改变（只是返回一个改变后的state，真正改变值的是在store里）
+                </p>
+                <p className='16'>
+                    reducer必须是纯函数
+                </p>
             </div>
             
         )
