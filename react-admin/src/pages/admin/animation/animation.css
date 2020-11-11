@@ -1,0 +1,20 @@
+.box-enter{
+    opacity: 0;
+}
+.box-enter-active{
+    opacity: 1;
+    transition: all 2s;
+}
+.box-enter-done{
+    opacity: 1;
+}
+.box-exit{
+    opacity: 1;
+}
+.box-exit-active{
+    opacity: 0;
+    transition: all 2s;
+}
+.box-exit-done{
+    opacity: 0;
+}

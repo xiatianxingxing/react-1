@@ -17,4 +17,9 @@ export const activeDeleteList = (index) => ({
     index
 })
 
+export const changeSonValue = (text) =>({
+    type: actionType.SON_VALUE,
+    text
+})
+
 

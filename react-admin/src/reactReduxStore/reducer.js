@@ -1,3 +1,4 @@
+import { ActionChangeInput } from './action';
 import * as actionType from './action-type';
 const defineObj = {
     
@@ -6,7 +7,8 @@ const defineObj = {
         '今天学习redux的第2天',
         '哎！ 难搞哦~'
     ],
-    value:'我是react-redux'
+    value:'我是react-redux',
+    text: '我是默认值'
 }
 
 export default  (state=defineObj,action ) =>{
@@ -27,7 +29,12 @@ export default  (state=defineObj,action ) =>{
             const newState = JSON.parse(JSON.stringify(state))
             newState.list.splice(action.index,1)
             return newState
-     
+        case actionType.SON_VALUE:
+          
+            return {
+                ...state,
+                text: action.text
+            }
         default:
             return state
     }

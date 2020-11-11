@@ -1,13 +1,13 @@
 import React,{ Component } from 'react';
 import styles from './admin.module.css'
 // 引入路由
-import {Route, Switch } from 'react-router-dom'
+import {Route, Switch ,withRouter} from 'react-router-dom'
 
 import { Layout } from 'antd';
 
 // 引入左边菜单
 import LeftMenu from './leftMenu'
-import { withRouter } from 'react-router-dom'
+
 // 获取组件
 import routers from './route'
 
@@ -52,7 +52,7 @@ class Admin extends Component {
                         
                     </Header>
                     <Layout>
-                        <Sider>
+                        <Sider style={{overflow:'auto'}}>
                             <LeftMenu></LeftMenu>
                         </Sider>
                         <Content>
@@ -68,6 +68,8 @@ class Admin extends Component {
                                 <Route path="/admin/redux1" component={ routers.Redux1 }></Route>
                                 <Route path="/admin/demo3" component={ routers.Demo3 }></Route>
                                 <Route path="/admin/reactRedux" component={ routers.ReactRedux }></Route>
+                                <Route path="/admin/propTypes" component={ routers.PropTypes }></Route>
+                                <Route path="/admin/animation" component={ routers.Animation }></Route>
                             </Switch>
                         </Content>
                     </Layout>

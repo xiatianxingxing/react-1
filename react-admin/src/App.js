@@ -9,14 +9,14 @@ import './assets/css/base.css'
 function App() {
 
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Switch>
         <Route path='/home' component={Home}></Route>
         <Route path='/admin' component={Admin}></Route>
         <Route path='/' component={Home}></Route>
       
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

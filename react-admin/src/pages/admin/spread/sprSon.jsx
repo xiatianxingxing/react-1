@@ -37,12 +37,12 @@ export default class Spread extends Component {
     render (){
         return (
             <div className="viewComponent">
-                子组件
-                <div style={{width: '200px',height: '400px',background: 'skyblue',color: '#ffffff'}}>
-                    <span>父级传来的值---{this.props.name}</span>
-                    <Input ref="text" onChange={this.sonHandleInput} placeholder="请输入内容" value={this.state.text} />
+               
+                <div >
+                    <p >父级传来的值---<span style={{color: 'blue'}}>{this.props.name}</span></p>
+                    <Input style={{width: '200px'}} ref="text" onChange={this.sonHandleInput} placeholder="请输入内容" value={this.state.text} />
                     <p style={{color: '#fff'}}>{this.state.text}</p>
-                    <Button type="primary" onClick={this.mes}>点我更新</Button>
+                    <Button type="primary" onClick={this.mes}>传递父级</Button>
                 </div>
             </div>
             
